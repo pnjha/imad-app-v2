@@ -4,6 +4,12 @@ body {
     margin-top: 75px;
 }
 
+head{
+    background: #555;
+    font-family: sans-serif;
+    font-size : 100%;
+}
+
 .center {
     text-align: center;
 }
