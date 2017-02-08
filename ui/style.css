@@ -10,7 +10,10 @@ head{
     font-size : 100%;
      color : green; 
 }
-
+a{
+    
+    color : green;
+}
 .center {
     text-align: center;
 }
