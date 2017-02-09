@@ -31,12 +31,12 @@ a{
 }
 
 .container{
-                max-width : 800px;
-                margin : 0 auto;
-                color : #6a6a6a;
-                font-family : sans-serif;
-                padding-top : 60px;
-                padding-left : 20px;
-                padding-right : 20px;
+    max-width : 800px;
+    margin : 0 auto;
+    color : #6a6a6a;
+    font-family : sans-serif;
+    padding-top : 60px;
+    padding-left : 20px;
+    padding-right : 20px;
     
 }
