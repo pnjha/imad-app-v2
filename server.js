@@ -1,9 +1,34 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var pool = require('pg').Pool;
 var app = express();
+
 app.use(morgan('combined'));
+
+var config = {
+  user:pnjha,    
+  host:'db.imad.hasura.app.io',
+  password:process.env.DB_PASSWORD,
+  database:pnjha,
+  port: 5432
+};
+
+var pool = new Pool(config);
+
+app.get('/testingdb',function(req,res){
+
+    pool.query('SELECT * from testdb',function(err,result){
+        if(err){
+            res.status(500).send(err.toString());
+        }
+        else
+        {
+            res.send(JSON.stringfy(result.rows));
+        }
+    });
+    
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
