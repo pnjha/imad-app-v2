@@ -7,7 +7,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var config = {
-  user:pnjha,    
+  user:'pnjha',    
   host:'db.imad.hasura.app.io',
   password:process.env.DB_PASSWORD,
   database:pnjha,
