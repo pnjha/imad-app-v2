@@ -10,8 +10,8 @@ var config = {
   user:'pnjha',    
   host:'db.imad.hasura.app.io',
   password:process.env.DB_PASSWORD,
-  database:pnjha,
-  port: 5432
+  database:'pnjha',
+  port: '5432'
 };
 
 var pool = new Pool(config);
