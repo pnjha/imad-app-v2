@@ -9,21 +9,20 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-
-app.get('/Prakash',function(res,req){
-    res.sendFile(path.join(_dirname,'ui','portfolio.html'));
-});
-
 app.get('/article-one', function(req,res){
-    res.send('article one will be served here soon');
+   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-app.get('/article-two', function(req,res){
-    res.send('article two will be served here soon');
+app.get('/article-two',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','article-two.html'));
 });
 
-app.get('/article-three', function(req,res){
-    res.send('article three will be served here soon');
+app.get('/article-three',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','artcle-three.html'));
+});
+
+app.get('/Prakash',function(req,res){
+    res.senfFile(path.join(__dirname,'ui','portfolio.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
