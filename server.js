@@ -22,7 +22,7 @@ app.get('/article-three',function(req,res){
 });
 
 app.get('/Prakash',function(req,res){
-    res.senfFile(path.join(__dirname,'ui','portfolio.html'));
+    res.sendFile(path.join(__dirname,'ui','portfolio.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
