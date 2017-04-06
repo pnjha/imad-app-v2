@@ -1,40 +1,287 @@
-body {
-    font-family: sans-serif;
-    margin-top: 75px;
+/*------------------------------------------------General Styling--------------------------------------------*/
+
+
+.logo{
+	
+	padding-bottom:5px;
 }
 
-head{
-    background: #555;
-    font-family: sans-serif;
-    font-size : 100%;
-     color : green; 
+.jumbotron{
+    
+    color: white;
+    background: red;
+	width: auto;
 }
-a{
-    color : green;
+
+.affix {
+	padding-top: 5px;
+      top: 0;
+      width: 87%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+
+
+/*------------------------------------------------Launch Page Styling--------------------------------------------*/
+/*------------------------------------------------AboutUs Page Styling--------------------------------------------*/
+/*------------------------------------------------RegisterDonor Page Styling--------------------------------------------*/
+/*------------------------------------------------BloodDonationTips Page Styling--------------------------------------------*/
+/*------------------------------------------------BloodBanks Page Styling--------------------------------------------*/
+
+ 
+.search-city{
+	 
+	 padding-right: 25px;	
+	 
+}  
+  
+.search-bloodgroup{
+	
+	padding-right: 25px;
+}   
+  
+select{
+	width: auto;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    height : 50px;
+    color: black;
+    font-size: inherit;
+    display: inline-block;
+    padding-left: 18px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
 }
-.center {
+
+
+.search-btn  {
+	
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	/*height : 100px;*/
+	border-radius: 8px;
+
+	
+	
+}
+.search-reg{
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;	
 }
 
-.text-big {
-    font-size: 300%;
+#radjumbo{
+	
+	display: inline-block;
 }
 
-.bold {
+
+.well{
+	display: inline-block;
+	width: 1000px;
+	color:black;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	resize: both;
+    overflow: auto;
+}
+
+input[type=radio]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	resize: both;
+    overflow: auto;
+}
+
+
+input[type=submit] {
+    width: 300px;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#donationfreq{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	resize: both;
+    overflow: auto;
+	
+}
+
+#regbloodid{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	resize: both;
+    overflow: auto;
+	
+}
+#city_name{
+	width: auto;
+    padding: 12px 12px;
+    margin: 8px 0;
+    /*display: inline-block;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	resize: both;
+    overflow: auto;
+	
+}
+#bloodlaunch{
+	width: auto;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	resize: both;
+    overflow: auto;
+	
+	
+}
+input[type=date] {
+    width: 50%;
+	color:black;
+    /*background-color: white;*/
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+	width: 300px;
+}
+
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	color:black;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
     font-weight: bold;
 }
 
-.img-medium {
-    height: 200px;
-}
-
-.container{
-    max-width : 800px;
-    margin : 0 auto;
-    color : #6a6a6a;
-    font-family : sans-serif;
-    padding-top : 60px;
-    padding-left : 20px;
-    padding-right : 20px;
-    
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
