@@ -26,6 +26,18 @@ app.get('/AboutUs',function(req,res){
     res.sendFile(path.join(__dirname,'ui','AboutUs.html'));
 });
 
+app.get('/BloodBanks',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','BloodBanks.html'));
+});
+
+app.get('/BloodDonationTips',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','BloodDonationTips.html'));
+});
+
+app.get('/Register',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','RegisterAsDonor.html'));
+});
+
 app.get('/article-three',function(req,res){
     res.sendFile(path.join(__dirname,'ui','artcle-three.html'));
 });
