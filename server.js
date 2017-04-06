@@ -22,6 +22,10 @@ app.get('/DonateBlood',function(req,res){
     res.sendFile(path.join(__dirname,'ui','LaunchPage.html'));
 });
 
+app.get('/AboutUs',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','AboutUs.html'));
+});
+
 app.get('/article-three',function(req,res){
     res.sendFile(path.join(__dirname,'ui','artcle-three.html'));
 });
