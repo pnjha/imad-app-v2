@@ -24,8 +24,8 @@
   }
 
 body{
-    padding-right:100 px;
-    padding-left:100 px;
+    padding-right:100px;
+    padding-left:100px;
 }
 
 /*------------------------------------------------Launch Page Styling--------------------------------------------*/
@@ -197,8 +197,7 @@ input[type=submit] {
 input[type=date] {
     width: 50%;
 	color:black;
-    /*background-color: white;*/
-    color: black;
+
     padding: 14px 20px;
     margin: 8px 0;
     border: 1px solid #ccc;
@@ -241,7 +240,7 @@ button.accordion.active:after {
     content: "\2212";
 }
 
-div.panel {
+.panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
